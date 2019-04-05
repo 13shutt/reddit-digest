@@ -6,6 +6,7 @@ import { createBrowserHistory } from 'history'
 import configureStore from 'store/configureStore'
 
 import Routers from 'view/Routers'
+import ResetStyles from 'styles/resetStyles'
 
 const history = createBrowserHistory()
 const store = configureStore(history)
@@ -13,6 +14,7 @@ const store = configureStore(history)
 const App = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
+      <ResetStyles />
       <Routers />
     </ConnectedRouter>
   </Provider>
