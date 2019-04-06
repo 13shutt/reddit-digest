@@ -9,6 +9,7 @@ const Title = styled.h1`
   line-height: normal;
   color: #FFFFFF;
   margin: 22px 18px;
+  cursor: pointer;
   span:first-child {
     font-weight: 300;
   }
