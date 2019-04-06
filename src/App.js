@@ -7,6 +7,7 @@ import configureStore from 'store/configureStore'
 
 import Routers from 'view/Routers'
 import ResetStyles from 'styles/resetStyles'
+import Fonts from 'styles/fonts'
 
 const history = createBrowserHistory()
 const store = configureStore(history)
@@ -15,6 +16,7 @@ const App = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <ResetStyles />
+      <Fonts />
       <Routers />
     </ConnectedRouter>
   </Provider>
